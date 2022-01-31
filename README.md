@@ -86,30 +86,30 @@
 
 ### 10.- Configurar loader de babel en nuestro archivo webpack.config.js
 
-{
-    ...
-    module: {
-        rules: [
-            {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                use: ['babel-loader']
-            }
-        ]
-    },
-    resolve: {
-        extensions: ['*', '.js', '.jsx']
-    },
-    ...
-}
+    {
+        ...
+        module: {
+            rules: [
+                {
+                    test: /\.(js|jsx)$/,
+                    exclude: /node_modules/,
+                    use: ['babel-loader']
+                }
+            ]
+        },
+        resolve: {
+            extensions: ['*', '.js', '.jsx']
+        },
+        ...
+    }
 
 ### 11.- crear el archivo .babelrc
 
-{
-    "presets": [
-      "@babel/preset-env"
-    ]
-}
+    {
+        "presets": [
+        "@babel/preset-env"
+        ]
+    }
 
 ### 12.- Instalar react con babel 
 
@@ -118,12 +118,12 @@
 
 ### 13.- Configurar .babelrc aceptando react
 
-{
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
-}
+    {
+        "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+        ]
+    }
 
 ### 14.- Modificar el contenido de nuestro index.js por el siquiente contenido
 
@@ -141,11 +141,11 @@
 
 ### 16.- Configurar HtmlWebpackPlugin
 
-module.exports = {
-    ...
-    plugins: [new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, './public/index.html'),
-        filename: 'index.html'
-    })],
-    ...
-}
+    module.exports = {
+        ...
+        plugins: [new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './public/index.html'),
+            filename: 'index.html'
+        })],
+        ...
+    }
