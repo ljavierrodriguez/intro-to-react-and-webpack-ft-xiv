@@ -137,3 +137,15 @@
 #### 15.- Instalar HtmlWebpackPlugin
 
     $ npm install --save-dev html-webpack-plugin
+
+
+### 16.- Configurar HtmlWebpackPlugin
+
+module.exports = {
+    ...
+    plugins: [new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, './public/index.html'),
+        filename: 'index.html'
+    })],
+    ...
+}

@@ -21,7 +21,7 @@ module.exports = {
         publicPath: '/'
     },
     devServer: {
-        allowedHosts: ['localhost', '*.gitpod.io']
+        allowedHosts: 'all'
     },
     plugins: [new HtmlWebpackPlugin({
         template: path.resolve(__dirname, './public/index.html'),
