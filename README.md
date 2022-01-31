@@ -132,7 +132,7 @@
 
     const content = <h1>Hola desde React</h1>;
 
-    ReactDOM.render(conrent, documetn.querySelector('#app'))
+    ReactDOM.render(content, document.querySelector('#app'))
 
 #### 15.- Instalar HtmlWebpackPlugin
 
