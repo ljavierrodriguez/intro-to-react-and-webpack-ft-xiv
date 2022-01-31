@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const content = <h1>Hola desde React</h1>;
+const App = () => {
+    return (
+        <h1>Hola Mundo desde React</h1>
+    )
+}
 
-ReactDOM.render(conrent, documetn.querySelector('#app'))
+ReactDOM.render(<App />, document.querySelector('#app'))
